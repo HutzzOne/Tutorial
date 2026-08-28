@@ -1,0 +1,54 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap');
+div {
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+
+}
+div#Pagina1 {
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+}
+div:hover#Pagina1 {
+    background-color: #fffb00;
+}
+h1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    background: linear-gradient(176deg, #23d741 7%, #171618 100%);
+    padding: 40px;
+    border-radius: 20px;
+    margin: -10px 0px;
+    color: #fff;
+    box-shadow: 13px 10px 26px 22px rgba(0, 0, 0, 0.10);
+    border-radius: 8px;
+    
+}
+body {
+    background-color: #6a994e;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+a:hover{
+    color: #ff00d4;
+}
+a::after {
+    content: "✅;";
+    font-size: 0.8em;
+    color: #ff00d4;
+}
