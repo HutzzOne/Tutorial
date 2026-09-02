@@ -12,17 +12,38 @@
     </style>
 </head>
 <body>
-    
-    <h1>Exercicitando titulos</h1>
+   
+    <h1>Projeto Ecológico</h1>
     <hr>
-    <div id="Pagina1">
-     <a href="pagina1.html">Ir para página 1 </a><br>
-    </div>
-    <br>
         
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Explicabo est illum suscipit, quidem ipsam ut architecto harum vero dolorum dolorem incidunt provident quibusdam saepe 
-        perspiciatis recusandae expedita. Error, ut sapiente.</p>
+        <p>passe o mouse na árvore</p>
+        <div class="Container-Arvore">
+    <img  class="imagem-arvore" src="media/tree.png" id="arvore" alt="Arvore">
+    </div>
+
+     <div id="Container">
+     <a href="acqua.html">    <div class= "bloco">Acqua </a></div>
+     
+    </div>
+    <script>
+        const arvore = document.getElementById('arvore');
+        let lado = 'centro'; // 'centro', 'direita', 'esquerda'
+
+        arvore.addEventListener('mouseenter', function() {
+            // Remove todas as classes de posição
+            arvore.classList.remove('posicao-direita', 'posicao-esquerda');
+            
+            if (lado === 'centro' || lado === 'esquerda') {
+                // Vai para DIREITA
+                arvore.classList.add('posicao-direita');
+                lado = 'direita';
+            } else if (lado === 'direita') {
+                // Vai para ESQUERDA
+                arvore.classList.add('posicao-esquerda');
+                lado = 'esquerda';
+            }
+        });
+    </script>
     
 </body>
 </html>
